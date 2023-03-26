@@ -4,28 +4,28 @@ version '1.0-SNAPSHOT'
 buildscript {
     repositories {
         google()
-        jcenter()
+        maven { url 'https://maven.dailyyoga.com.cn/nexus/repository/dailyyoga-public/' }
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:7.2.0'
     }
 }
 
 rootProject.allprojects {
     repositories {
         google()
-        jcenter()
+        maven { url 'https://maven.dailyyoga.com.cn/nexus/repository/dailyyoga-public/' }
     }
 }
 
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 33
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 21
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
@@ -34,6 +34,5 @@ android {
 }
 
 dependencies {
-    implementation 'com.tencent.bugly:crashreport:3.3.92'
-    implementation 'com.tencent.bugly:nativecrashreport:3.9.0'
+    implementation 'com.tencent.bugly:crashreport:4.1.9'
 }
