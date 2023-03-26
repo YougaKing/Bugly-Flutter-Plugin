@@ -1,7 +1,7 @@
-name: bugly_crash
+name: bugly_flutter
 description: Flutter app can use this plugin to monitor exception happened and upload error or crash to bugly server.
 version: 0.0.7
-homepage: https://bugly.qq.com
+homepage: https://github.com/YougaKing/Bugly-Flutter-Plugin
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
